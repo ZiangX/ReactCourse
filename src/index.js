@@ -16,6 +16,7 @@ import Comment from './comment';
 const App = () =>{
 	return (
 		<div>
+			<h3 class="ui dividing header" style={{color: "red"}}>First Day</h3>
 			<form>
 				<label >
 					UserName 
@@ -29,7 +30,10 @@ const App = () =>{
 				<button style={{color:"white", backgroundColor: colorText()}}>
 					{clickText()}
 				</button>
+				
+				<h3 class="ui dividing header" style={{color: "red"}}>Second Day</h3>
 				<Comment />
+				
 			</form>
 		</div>
 	)
