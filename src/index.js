@@ -1,6 +1,8 @@
 // Import all kinds of files that you need to use
 import React from "react";
 import ReactDOM from "react-dom";
+import Comment from './comment';
+
 
  function clickText(){
 	return "Click mee";
@@ -27,6 +29,7 @@ const App = () =>{
 				<button style={{color:"white", backgroundColor: colorText()}}>
 					{clickText()}
 				</button>
+				<Comment />
 			</form>
 		</div>
 	)
