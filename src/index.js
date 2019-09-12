@@ -19,10 +19,15 @@ import SeasonDisplay from "./SeasonDisplay";
 const App = () =>{
 	return (
 		<div>
-			<h3 class="ui dividing header" style={{color: "red"}}>Fourth Day : About Props </h3>
+			<h3 className="ui dividing header" style={{color: "red"}}>
+				Fifth Day : About State (Refactor the app)	
+			</h3>
 			<SeasonDisplay />
 			
-			<h3 class="ui dividing header" style={{color: "red"}}>Third Day: Continue Component</h3>
+			<h3 className="ui dividing header" style={{color: "red"}}>Fourth Day : About Props </h3>
+			<SeasonDisplay />
+			
+			<h3 className="ui dividing header" style={{color: "red"}}>Third Day: Continue Component</h3>
 			<Card >
 				<Comment author="ang" time="1:00 pm" text="be couraged" img={faker.image.avatar()}/>
 			</Card>
@@ -36,19 +41,19 @@ const App = () =>{
 				</div>
 			</Card>
 			
-			<h3 class="ui dividing header" style={{color: "red"}}>Second Day: Component</h3>
+			<h3 className="ui dividing header" style={{color: "red"}}>Second Day: Component</h3>
 				<Comment author="ang" time="1:00 pm" text="be couraged" img={faker.image.avatar()}/>
 				<Comment author="xu" time="11:00 pm" text="should be couraged" img={faker.image.avatar()}/>
 				<Comment author="zi" time="12:00 pm" text="pls be couraged" img={faker.image.avatar()}/>
 				
-			<h3 class="ui dividing header" style={{color: "red"}}>First Day: JSX</h3>
+			<h3 className="ui dividing header" style={{color: "red"}}>First Day: JSX</h3>
 			<form>
 				<label >
 					UserName 
 					<input type="text" name="account"/>
 				</label>
 				<br />
-				<label htmlfor="password" >PassWord</label>
+				<label htmlFor="password" >PassWord</label>
 				<input type="password" name="password" id="password"/>
 				<br/>
 				{/*See how does it refer the variable here */}
