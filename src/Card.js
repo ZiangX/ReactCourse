@@ -1,6 +1,6 @@
 // Import all kinds of files that you need to use
 import React from "react";
-import faker from "faker";
+// import faker from "faker";
 
 
 const Card = (props) =>{
