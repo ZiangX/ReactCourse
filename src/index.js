@@ -4,6 +4,7 @@ import ReactDOM from "react-dom";
 import Comment from './Comment';
 import faker from "faker";
 import Card from './Card';
+import SeasonDisplay from "./SeasonDisplay";
 
  function clickText(){
 	return "Click mee";
@@ -18,7 +19,10 @@ import Card from './Card';
 const App = () =>{
 	return (
 		<div>
-			<h3 class="ui dividing header" style={{color: "red"}}>Third Day</h3>
+			<h3 class="ui dividing header" style={{color: "red"}}>Fourth Day : About Props </h3>
+			<SeasonDisplay />
+			
+			<h3 class="ui dividing header" style={{color: "red"}}>Third Day: Continue Component</h3>
 			<Card >
 				<Comment author="ang" time="1:00 pm" text="be couraged" img={faker.image.avatar()}/>
 			</Card>
@@ -32,12 +36,12 @@ const App = () =>{
 				</div>
 			</Card>
 			
-			<h3 class="ui dividing header" style={{color: "red"}}>Second Day</h3>
+			<h3 class="ui dividing header" style={{color: "red"}}>Second Day: Component</h3>
 				<Comment author="ang" time="1:00 pm" text="be couraged" img={faker.image.avatar()}/>
 				<Comment author="xu" time="11:00 pm" text="should be couraged" img={faker.image.avatar()}/>
 				<Comment author="zi" time="12:00 pm" text="pls be couraged" img={faker.image.avatar()}/>
 				
-			<h3 class="ui dividing header" style={{color: "red"}}>First Day</h3>
+			<h3 class="ui dividing header" style={{color: "red"}}>First Day: JSX</h3>
 			<form>
 				<label >
 					UserName 
