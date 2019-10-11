@@ -1,10 +1,10 @@
-// Import all kinds of files that you need to use
+// Import all kinds of files that you need to use, because they are in the same directory, we use ./fileName
 import React from "react";
 import ReactDOM from "react-dom";
 import Comment from './Comment';
 import faker from "faker";
 import Card from './Card';
-import SeasonDisplay from "./SeasonDisplay";
+import SeasonDisplayApp from "./SeasonDisplayApp";
 
  function clickText(){
 	return "Click mee";
@@ -20,12 +20,17 @@ const App = () =>{
 	return (
 		<div>
 			<h3 className="ui dividing header" style={{color: "red"}}>
+				Sixth Day : About lifecycyle
+			</h3>
+			<SeasonDisplayApp />
+			
+			<h3 className="ui dividing header" style={{color: "red"}}>
 				Fifth Day : About State (Refactor the app)	
 			</h3>
-			<SeasonDisplay />
+			<SeasonDisplayApp />
 			
 			<h3 className="ui dividing header" style={{color: "red"}}>Fourth Day : About Props </h3>
-			<SeasonDisplay />
+			<SeasonDisplayApp />
 			
 			<h3 className="ui dividing header" style={{color: "red"}}>Third Day: Continue Component</h3>
 			<Card >
