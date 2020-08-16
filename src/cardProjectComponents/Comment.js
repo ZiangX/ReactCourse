@@ -20,9 +20,7 @@ const Comments = (props) =>{
 			  </div>
 			</div>
 		 </div>
-
 	)
-	
 };
 
 export default Comments;

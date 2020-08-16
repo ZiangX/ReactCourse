@@ -20,19 +20,14 @@ class SeasonDisplayApp extends React.Component {
 			(error) => {
 				this.setState({errorMessage: error.message}); 
 			},
-
 		);
-		
 	}
 	
 	componentDidUpdate(){
 		// console.log("componentDidUpdate");
-		
 	}
 	
-	render(){
-		// console.log("this.state.location", this.state.location);
-		 
+	renderContent(){
 		if(this.state.location && !this.state.errorMessage){
 			return(
 				<div>
@@ -49,7 +44,15 @@ class SeasonDisplayApp extends React.Component {
 			);
 		}
 	
-		return <Spinner />
+		// Since we have to set the spinner rendered at the beginning of the page, so the only place is 			in the render method 
+		return <Spinner message="Please accept the location request"/>
+		
+		}
+	
+	render(){
+		return(
+			<div>{this.renderContent()}</div>
+		)
 	}
 }
 

@@ -20,6 +20,9 @@ const App = () =>{
 	return (
 		<div>
 			<h3 className="ui dividing header" style={{color: "red"}}>
+				August 16 2020
+			</h3>
+			<h3 className="ui dividing header" style={{color: "red"}}>
 				Sixth Day : About lifecycyle
 			</h3>
 			<SeasonDisplayApp />
@@ -65,9 +68,6 @@ const App = () =>{
 				<button style={{color:"white", backgroundColor: colorText()}}>
 					{clickText()}
 				</button>
-				
-				
-				
 			</form>
 		</div>
 	)
